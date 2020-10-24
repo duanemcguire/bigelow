@@ -33,9 +33,7 @@
 
 <script>
 export default {
-  components: {
-    VueSlickCarousel
-  },
+
   head() {
     return {
       title: 'Bigelow Organs',
@@ -49,7 +47,6 @@ export default {
       ]
     }
   },
-  data() {}
 }
 </script>
 

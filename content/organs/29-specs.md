@@ -7,4 +7,10 @@ location: Salt Lake City, UT
 manuals: 2
 voices: 10
 ranks: 11
+media: [
+  {
+    src: "/images/opus/29/a.jpg",
+  },
+]
+
 ---

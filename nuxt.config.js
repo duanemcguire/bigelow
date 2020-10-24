@@ -8,11 +8,11 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: "stylesheet", type: "text/css", href: "/stylesheets/base.css" },
       { rel: "stylesheet", type: "text/css", href: "/stylesheets/skeleton.css" },
       { rel: "stylesheet", type: "text/css", href: "/stylesheets/layout.css" }
-    ]
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -20,8 +20,7 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-  ],
+  plugins: [{ src: './plugins/vue-slick-carousel.js' }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -33,7 +32,7 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
-    '@nuxt/content',
+    '@nuxt/content'
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)

@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
   <DIV class="sixteen columns alt-bg-dark page-header">
     <h1 class="italic alt-color">News</h1>
   </DIV>

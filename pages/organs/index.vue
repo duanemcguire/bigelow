@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="container">
   <Table id="opusList">
     <colgroup>
       <col style="width: 120px;">
@@ -23,14 +23,18 @@
         <td class="ranks">Ranks</td>
       </tr>
       <tr v-for="organ of organs" :key="organs.opus">
-        <td><img v-bind:src="'/images/opus/' + organ.opus + '/thumb.jpg'" /></td>
-        <td>{{organ.opus}}</td>
-        <td>{{organ.year}}</td>
-        <td><span v-for="owner of organ.owner">{{owner}}<BR /></span></td>
-        <td>{{organ.location}}</td>
-        <td>{{organ.manuals}}</td>
-        <td>{{organ.voices}}</td>
-        <td>{{organ.ranks}}</td>
+        <td class="image">
+          <a :href="'/opus/' + organ.slug">
+            <img v-bind:src="'/images/opus/' + organ.opus + '/thumb.jpg'" />
+          </a>
+        </td>
+        <td class="opus">{{organ.opus}}</td>
+        <td class="year">{{organ.year}}</td>
+        <td class="owner"><span v-for="owner of organ.owner">{{owner}}<BR /></span></td>
+        <td class="location">{{organ.location}}</td>
+        <td class="manuals">{{organ.manuals}}</td>
+        <td class="voices">{{organ.voices}}</td>
+        <td class="ranks">{{organ.ranks}}</td>
       </tr>
     </tbody>
   </table>
@@ -45,9 +49,7 @@ export default {
     $content,
     params
   }) {
-    var organs = await $content('organs', {
-        text: true
-      })
+    var organs = await $content('organs')
       .sortBy('opus', 'desc')
       .fetch()
 
@@ -58,13 +60,13 @@ export default {
   },
   head() {
     return {
-      title: 'Blog - McGuire Piano',
+      title: 'Bigelow Organs - Opus List',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
           hid: 'blog-index',
           name: 'description',
-          content: 'Collection of blog posts about piano rebuilding and restoration'
+          content: 'Tracker pipe organs produced by Bigelow Organs from 1979 to present'
         }
       ]
     }

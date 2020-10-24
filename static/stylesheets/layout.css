@@ -16,7 +16,7 @@
 
 /* #Site Styles
 ================================================== */
-   body 
+   body
     {
 	    background-color: #eedbbb;
     }
@@ -26,6 +26,8 @@ hr.foot {
 .container
 	{
 		background-color: #a2998a;
+    min-height: 1vh;
+    margin: 0 auto;
 		/* background-color: #efefef; */
 	}
 .bodycolor
@@ -33,13 +35,13 @@ hr.foot {
 		background-color: #eedbbb;
 	}
 .container .fullwidth
-	{ 
-		width: 100%; 
+	{
+		width: 100%;
 		margin: 0px;
 	}
 
 /* MENU */
-#menucontainer 
+#menucontainer
 	{
 		margin-top: 10px;
 	}
@@ -83,7 +85,7 @@ background-color: #ffcc66;
 
 /* Captioned image */
 div.figure {
-  text-align: center;	
+  text-align: center;
   border: thin silver solid;
   padding: 6px;
 }
@@ -108,12 +110,12 @@ img.align-right{float: right; margin: 0 0 12px 15px;}
 
 /* #Page Styles
 ================================================== */
-	#opusList { 
+	#opusList {
 		border-collapse:collapse;
 		margin-left: 10px;
 		table-layout: fixed;
 		width: 780px;
-		
+
 	}
 	#opusList tr {
 		background-color: #a2998a;
@@ -122,13 +124,13 @@ img.align-right{float: right; margin: 0 0 12px 15px;}
 		background-color: #eedbbb;
 	}
 
-	#opusList tr td { 
+	#opusList tr td {
 		border: 1px solid black;
 		vertical-align: middle;
 		text-align: center;
 		padding-bottom: 0px;
 		word-wrap: break-all;
-		
+
 	}
 
 

@@ -7,4 +7,23 @@ location: Oklahoma City, OK
 manuals: 2
 voices: 16
 ranks: 22
+media: [
+  {
+    src: "/images/opus/26/a.jpg",
+    caption: "Bigelow & Co. Opus 26 - Photo by James Richardson",
+  },
+  {
+    src: "/images/opus/26/b.jpg",
+    caption: "Bigelow & Co. Opus 26 - Photo by James Richardson",
+  },
+  {
+    src: "/images/opus/26/c.jpg",
+    caption: "Bigelow & Co. Opus 26 - Photo by James Richardson",
+  },
+  {
+    src: "/images/opus/26/d.jpg",
+    caption: "Bigelow & Co. Opus 26 - Photo by James Richardson",
+  },
+]
+
 ---

@@ -7,4 +7,11 @@ location: Healdsburg, CA
 manuals: 2
 voices: 5
 ranks: 7
+media: [
+  {
+    src: "/images/opus/39/a.jpg",
+    caption: "",
+  },
+]
+
 ---

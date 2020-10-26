@@ -30,8 +30,8 @@
         </td>
         <td class="opus">{{organ.opus}}</td>
         <td class="year">{{organ.year}}</td>
-        <td class="owner"><span v-for="owner of organ.owner">{{owner}}<BR /></span></td>
-        <td class="location">{{organ.location}}</td>
+        <td class="owner"><span v-for="owner of organ.owner" v-html="owner + '<BR/>'"></span></td>
+        <td class=" location">{{organ.location}}</td>
         <td class="manuals">{{organ.manuals}}</td>
         <td class="voices">{{organ.voices}}</td>
         <td class="ranks">{{organ.ranks}}</td>

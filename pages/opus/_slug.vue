@@ -1,9 +1,9 @@
 <template>
-<div>
+<div class="container">
   <div class="organ-spec four columns">
     <h3>Opus {{organ.opus}}</h3>
     <p>{{organ.year}}</p>
-    <p><span v-for="owner of organ.owner">{{owner}}<BR /></span></p>
+    <p><span v-for="owner of organ.owner" v-html="owner + '<BR>'"></span></p>
     <p>{{organ.location}}</p>
     <BR />
     <p>{{organ.manuals}} Manuals</p>

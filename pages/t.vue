@@ -1,21 +1,15 @@
 <template>
 <div>
   <Carousel>
-    <Slide>HI</SLIDE>
-    <Slide>There</SLIDE>
+    <Slide><img src="/images/opus/40/a.jpg"></Slide>
+    <Slide><img src="/images/opus/40/b.jpg"></Slide>
+    <Slide><img src="/images/opus/40/c.jpg"></Slide>
+    <Slide><img src="/images/opus/40/d.jpg"></Slide>
 
   </Carousel>
 </div>
 </template>
 
 <script>
-import Vue from 'vue'
-import {
-  Carosel,
-  Slide
-} from 'vue-carousel'
-Vue.component('carousel', Carousel)
-Vue.component('slide', Slide)
-
 export default {}
 </script>

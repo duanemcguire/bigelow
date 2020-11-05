@@ -19,13 +19,23 @@
 
     </div>
     <div class="twelve columns">
-
-      <div><img src="/images/shop.jpg"></div>
-      <div><img src="/images/shop-window.jpg"></div>
-      <div><img src="/images/opus/37/a.jpg"></div>
-      <div><img src="/images/opus/37/c.jpg"></div>
-      <div><img src="/images/opus/42/c.jpg"></div>
-
+      <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="true" :autoplay="true">
+        <slide>
+          <div><img src="/images/shop.jpg"></div>
+        </slide>
+        <slide>
+          <div><img src="/images/shop-window.jpg"></div>
+        </slide>
+        <slide>
+          <div><img src="/images/opus/37/a.jpg"></div>
+        </slide>
+        <slide>
+          <div><img src="/images/opus/37/c.jpg"></div>
+        </slide>
+        <slide>
+          <div><img src="/images/opus/42/c.jpg"></div>
+        </slide>
+      </carousel>
     </div>
   </div>
 </div>

@@ -1,17 +1,21 @@
 <template>
 <div>
-  <VueSlickCarousel :arrows="true" :dots="true">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-  </VueSlickCarousel>
+  <Carousel>
+    <Slide>HI</SLIDE>
+    <Slide>There</SLIDE>
+
+  </Carousel>
 </div>
 </template>
 
 <script>
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-// optional style for arrows & dots
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import Vue from 'vue'
+import {
+  Carosel,
+  Slide
+} from 'vue-carousel'
+Vue.component('carousel', Carousel)
+Vue.component('slide', Slide)
+
 export default {}
 </script>

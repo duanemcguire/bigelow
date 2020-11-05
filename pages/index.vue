@@ -32,6 +32,9 @@
 </template>
 
 <script>
+//import VueSlickCarousel from 'vue-slick-carousel'
+
+//Vue.component('VueSlickCarousel', VueSlickCarousel)
 export default {
 
   head() {
@@ -42,7 +45,7 @@ export default {
         {
           hid: 'blog-index',
           name: 'description',
-          content: 'Bigelow Organs: building solid, reliable tracker pipe organs ins 1979 '
+          content: 'Bigelow Organs: building solid, reliable tracker pipe organs since 1979 '
         }
       ]
     }
@@ -50,8 +53,28 @@ export default {
 }
 </script>
 
+
 <style>
 .container {
   margin: 0 auto;
+}
+
+#carouselContainer {
+  padding: 0 60px;
+}
+
+.VueCarousel-slide {
+  position: relative;
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center;
+  min-height: 100px;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>

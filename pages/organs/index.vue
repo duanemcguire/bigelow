@@ -38,9 +38,38 @@
       </tr>
     </tbody>
   </table>
+  <div id="opuslistmobile">
+    <div style="border: 1px solid black; max-width: 250px; margin-bottom: 5px;" v-for="organ of organs" :key="organs.opus" :onclick="'location.href=\'/opus/' + organ.slug + '\''">
+      <a :href="'/opus/' + organ.slug">
+        <img v-bind:src="'/images/opus/' + organ.opus + '/thumb.jpg'" /><BR />
+      </a>
+      Opus {{organ.opus}}<BR />
+      {{organ.year}}<BR />
+      <span v-for="owner of organ.owner" v-html="owner + '<BR/>'"></span>
+      {{organ.location}}
+
+    </div>
+  </div>
 
 </div>
 </template>
+
+<style>
+#opuslistmobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #opusList {
+    display: none;
+  }
+
+  #opuslistmobile {
+    display: block;
+  }
+
+}
+</style>
 
 <script>
 export default {

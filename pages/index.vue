@@ -4,61 +4,63 @@
     <div class="four columns">
       <h1>Bigelow Organs</h1>
       <p>We specialize in building solid, reliable tracker instruments that excel in musical, architectural, and tactile qualities. That's what we've been doing since 1978!</p>
-      <p>Please email us at <a href="mailto:mail@bigeloworgans.com">mail@bigeloworgans.com</a><BR />
+      <p>Please email us at <a href="mailto:mail@bigeloworgans.com">mail@bigeloworgans.com</a>
         See us also on <a href="http://www.facebook.com/pages/Bigelow-Co-Inc-Organ-Builders/122521624517257?sk=wall">Facebook</a>.
       </p>
-
-      <p><BR />
+      <p>
         Featured in the slide show at right:
+      </p>
       <ul>
         <li>Our shop (historic church)</li>
         <li><a href="/opus/37-specs">1859 Robjohn</a></li>
         <li><a href="/opus/42-specs">Opus 42</a> - recent installation</li>
       </ul>
-      </p>
 
     </div>
-    <div class="twelve columns">
-      <client-only>
-        <carousel :per-page="1" :mouse-drag="true" :autoplay="true" :autoplay-timeout="7000" :speed="500" :loop="true" :pagination-enabled="true" :auto-play-hover-pause="false">
+    <client-only>
+      <div class="twelve columns">
+        <carousel :per-page="1" :mouse-drag="true" :autoplay="true" :autoplay-timeout="7000" :speed="500" :loop="true" :pagination-enabled="false" :autoplay-hover-pause="false">
           <slide>
             <figure>
               <img src="/images/shop.jpg">
-              <figcaption>Our shop (historic church)</figcaption>
+              <figcaption>Our Shop</figcaption>
             </figure>
           </slide>
           <slide>
             <figure>
               <img src="/images/shop-window.jpg">
-              <figcaption>Shop window</figcaption>
+              <figcaption>The shop window</figcaption>
             </figure>
           </slide>
           <slide>
             <figure>
               <img src="/images/opus/37/a.jpg">
-              <figcaption>1859 Robjohn</figcaption>
+              <figcaption><a href="/opus/37-specs/">1859 Robjohn</a></figcaption>
             </figure>
           </slide>
           <slide>
             <figure>
               <img src="/images/opus/37/c.jpg">
-              <figcaption>1859 Robjohn</figcaption>
+              <figcaption><a href="/opus/37-specs/">Robjohn</a> console</figcaption>
             </figure>
           </slide>
           <slide>
             <figure>
               <img src="/images/opus/42/c.jpg">
-              <figcaption>Opus 42 - recent installation</figcaption>
+              <figcaption><a href="/opus/42-specs/">Opus 42</a> - Recent installation</figcaption>
             </figure>
           </slide>
         </carousel>
-      </client-only>
-    </div>
+      </div>
+    </client-only>
   </div>
 </div>
 </template>
 
 <script>
+//import VueSlickCarousel from 'vue-slick-carousel'
+
+//Vue.component('VueSlickCarousel', VueSlickCarousel)
 export default {
 
   head() {
@@ -69,7 +71,7 @@ export default {
         {
           hid: 'blog-index',
           name: 'description',
-          content: 'Bigelow Organs: building solid, reliable tracker pipe organs since 1979 '
+          content: 'Bigelow Organs: building solid, reliable tracker pipe organs since 1978'
         }
       ]
     }
@@ -108,9 +110,15 @@ img {
 
 }
 
+@media screen and (max-width: 1000px) {
+  img {
+    max-width: 450px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   img {
-    max-width: 320px;
+    max-width: 200px;
   }
 }
 </style>

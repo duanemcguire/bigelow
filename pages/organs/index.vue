@@ -22,7 +22,7 @@
         <td class="voices">Voices</td>
         <td class="ranks">Ranks</td>
       </tr>
-      <tr v-for="organ of organs" :key="organs.opus">
+      <tr v-for="organ of organs" :key="organs.opus" :onclick="'location.href=\'/opus/' + organ.slug + '\''">
         <td class="image">
           <a :href="'/opus/' + organ.slug">
             <img v-bind:src="'/images/opus/' + organ.opus + '/thumb.jpg'" />

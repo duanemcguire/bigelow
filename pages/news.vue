@@ -15,7 +15,7 @@
       <tr>
         <td>
           We are excited to announce a contract with The Church of the Epiphany (Episcopal) in New York City for a new three manual tracker organ of 37 voices. Completion is planned for mid-2023. The hand-drawn rendering above has been submitted to
-          the church for visual design approval. See <a href="/opus/44-stop-list">stop list</a>.
+          the church for visual design approval. See <a href="/opus/44-specs">stop list</a>.
         </td>
       </tr>
 
@@ -43,7 +43,7 @@
     <img class="align-left" src="/images/37_news.jpg">
     We are pleased to announce that, after fifty years of homelessness, the only surviving work of New York organ builder Thomas Robjohn has finally found a home. It is now on permanent display at the <a target="_blank"
       href="https://mim.org/">Musical Instrument Museum</a> in Phoenix, Arizona. The 1859 instrument is fully playable, and its gorgeous walnut case, entirely veneered in rosewood, suits it well to this venue where it will be seen more often than
-    heard. See <a href="/opus/37-stop-list">specs</a> and <a href="/opus/37-specs">more photos</a> on the <a href="/opus/37-specs">Opus 37 page</a>.
+    heard. See specsmore photos on the <a href="/opus/37-specs">Opus 37 page</a>.
     <BR />
 
     <h2>ORGANS FOR SALE</h2>

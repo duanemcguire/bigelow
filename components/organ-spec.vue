@@ -18,7 +18,11 @@
     </p>
 
   </div>
-  <slot></slot>
+  <div style="text-align: center;">
+    <span v-if="onlyonephoto"></span>
+    <span v-else-if="!stoplist">Swipe for more photos</span>
+    <slot></slot>
+  </div>
 </div>
 </template>
 <script>
@@ -31,8 +35,11 @@ export default {
     stoplist: {
       type: Boolean,
       required: false
+    },
+    onlyonephoto: {
+      type: Boolean,
+      required: false,
     }
-
   },
   head() {
     return {

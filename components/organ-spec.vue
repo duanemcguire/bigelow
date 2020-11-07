@@ -9,8 +9,13 @@
     <p style="margin-bottom:0px;">{{organ.voices}} Voices</p>
     <p>{{organ.ranks}} Ranks </p>
     <p></p>
-    <a v-if="stoplist" :href="'/opus/' + organ.opus + '-specs'">Photos</a>
-    <a v-else :href="'/opus/' + organ.opus + '-stop-list'">Stop List</a>
+    <p>
+      <a v-if="stoplist" :href="'/opus/' + organ.opus + '-specs'">Photos</a>
+      <a v-else :href="'/opus/' + organ.opus + '-stop-list'">Stop List</a>
+    </p>
+    <p style="padding-top 40px;">
+      <nuxt-content :document="organ" />
+    </p>
 
   </div>
   <slot></slot>

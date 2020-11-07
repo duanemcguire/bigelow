@@ -9,3 +9,4 @@ voices: 16
 ranks: 22
 
 ---
+<p>Link to <a target="_blank" href="http://www.allsoulsokc.com/ministry/music/">All Souls' Music page</a></p>

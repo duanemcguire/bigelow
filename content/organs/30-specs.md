@@ -7,6 +7,5 @@ location: Paoli, PA
 manuals: 2
 voices: 10
 ranks: 10
-
-
 ---
+<p>Link to <a target="_blank" href="http://www.stpetersgv.org/Worship/music.html">St. Peter's Music Ministry page</a></p>

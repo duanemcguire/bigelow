@@ -7,5 +7,5 @@ location: Columbus, OH;
 manuals: 2
 voices: 32
 ranks: 45
-
 ---
+Photo credits: Katherine Bigelow

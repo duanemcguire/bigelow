@@ -7,6 +7,10 @@ export default {
       { rel: "stylesheet", type: "text/css", href: "/stylesheets/skeleton.css" },
       { rel: "stylesheet", type: "text/css", href: "/stylesheets/layout.css" }
     ],
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    ],  
   },
   target: 'static',
   ssr: true,

@@ -20,7 +20,7 @@
   </div>
   <div style="text-align: center;">
     <span v-if="onlyonephoto"></span>
-    <span v-else-if="!stoplist">Swipe for more photos</span>
+    <span v-else-if="!stoplist">Swipe to scroll through photos</span>
     <slot></slot>
   </div>
 </div>

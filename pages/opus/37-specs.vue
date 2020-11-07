@@ -3,7 +3,7 @@
   <div>
     <client-only>
       <div class="twelve columns">
-        <carousel :per-page="1" :mouse-drag="true" :speed="500" :loop="true">
+        <carousel :per-page="1" :mouse-drag="true" :autoplay="true" :autoplay-timeout="7000" :speed="500" :loop="true" :pagination-enabled="true" :autoplay-hover-pause="false" navigation-enabled="true">
           <slide>
             <figure><img src='/images/opus/37/a.jpg'>
               <figcaption>Opus 37 - 1859 Thomas Robjohn - View 1</figcaption>

@@ -66,14 +66,11 @@ export default {
   head() {
     return {
       title: 'Bigelow Organs',
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: 'blog-index',
-          name: 'description',
-          content: 'Bigelow Organs: building solid, reliable tracker pipe organs since 1978'
-        }
-      ]
+      meta: [{
+        hid: 'h-index',
+        name: 'description',
+        content: 'Bigelow Organs: building solid, reliable tracker pipe organs since 1978'
+      }]
     }
   },
 }

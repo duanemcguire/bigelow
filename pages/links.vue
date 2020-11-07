@@ -28,3 +28,17 @@
   </DIV>
 </div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: 'Bigelow Organs - Links',
+      meta: [{
+        hid: 'link-header',
+        name: 'description',
+        content: 'Links related to organ building'
+      }]
+    }
+  },
+}
+</script>

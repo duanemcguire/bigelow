@@ -7,11 +7,5 @@ location: New York, NY
 manuals: 3
 voices: 37
 ranks: 42
-media: [
-  {
-    src: '/images/opus/44/a.jpg',
-    caption: 'Bigelow & Co. Opus 44 - Rendering submitted for approval of visual design'
-  },
-]
 
 ---

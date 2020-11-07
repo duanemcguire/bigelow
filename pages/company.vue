@@ -96,3 +96,17 @@
   </DIV>
 </div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: 'Bigelow Organs - Company',
+      meta: [{
+        hid: 'news-header',
+        name: 'description',
+        content: 'A description of the Bigelow Organs Company'
+      }]
+    }
+  },
+}
+</script>

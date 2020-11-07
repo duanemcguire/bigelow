@@ -19,3 +19,17 @@
   </DIV>
 </div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: 'Bigelow Organs - Contact Us',
+      meta: [{
+        hid: 'news-header',
+        name: 'description',
+        content: 'Contact information for Bigelow Organs'
+      }]
+    }
+  },
+}
+</script>

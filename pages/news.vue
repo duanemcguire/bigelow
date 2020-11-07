@@ -53,3 +53,17 @@
   </DIV>
 </div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: 'Bigelow Organs - News',
+      meta: [{
+        hid: 'news-header',
+        name: 'description',
+        content: 'Bigelow Organs News'
+      }]
+    }
+  },
+}
+</script>

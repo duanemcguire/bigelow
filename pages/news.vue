@@ -29,7 +29,7 @@
       <tr>
         <td>
           Our open house on March 13 was well attended, as documented in these <a target="blank"
-            href=https://photos.google.com/share/AF1QipMAahFIyaXvlCMevEh2qROmyvbZQdMqh6-HThVuz0ZspT4DXK4fvP0oet6h2shkOg/photo/AF1QipNW7DYq7ZEUlo1JOlx97lv51UvAleh2ErcGYYSJ?key=RXJlTXlhNGRuRzJQeXJmV2JPOGlTQlp4d1dYMW9R>photos and videos</a>. (At that
+            href="https://photos.google.com/share/AF1QipMAahFIyaXvlCMevEh2qROmyvbZQdMqh6-HThVuz0ZspT4DXK4fvP0oet6h2shkOg/photo/AF1QipNW7DYq7ZEUlo1JOlx97lv51UvAleh2ErcGYYSJ?key=RXJlTXlhNGRuRzJQeXJmV2JPOGlTQlp4d1dYMW9R">photos and videos</a>. (At that
           time public gatherings in Utah were restricted to 100 people). Opus 43 is a rebuild of <a href="/opus/23-specs">Opus 23</a>, which was returned to our shop
           in January 2019 to be rebuilt for St. Paul's Episcopal Church in Healdsburg, California. Progress photos can be seen on our <a href="/opus/43-specs">Opus 43 page</a> and also on <a target="_blank"
             href="https://www.facebook.com/pg/Bigelow-Co-Inc-Organ-Builders-122521624517257/photos/?tab=album&album_id=2236574869778578">Facebook</a>.

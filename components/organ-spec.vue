@@ -16,12 +16,32 @@
     <p style="padding-top 40px;">
       <nuxt-content :document="organ" />
     </p>
+    <div>
+      <div v-if="organ.prev > ''">
+        <span v-if="stoplist == true">
+          Previous: <a :href="'/opus/' + organ.prev + '-stoplist'">Opus {{organ.prev}}</a>
+        </span>
+        <span v-else>
+          Previous: <a :href="'/opus/' + organ.prev + '-specs'">Opus {{organ.prev}}</a>
+        </span>
+      </div>
 
+      <div v-if="organ.next > ''">
+        <span v-if="stoplist == true">
+          Next: <a :href="'/opus/' + organ.next + '-stoplist'">Opus {{organ.next}}</a>
+        </span>
+        <span v-else>
+          Next: <a :href="'/opus/' + organ.next + '-specs'">Opus {{organ.next}}</a>
+        </span>
+      </div>
+    </div>
   </div>
-  <div style="text-align: center;">
+  <div style=" text-align: center;">
     <span v-if="onlyonephoto"></span>
     <span v-else-if="!stoplist">Swipe to scroll through photos</span>
     <slot></slot>
+
+
   </div>
 </div>
 </template>

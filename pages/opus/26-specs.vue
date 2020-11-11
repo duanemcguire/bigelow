@@ -36,9 +36,17 @@ export default {
     $content,
     route
   }) {
+    var organs = await $content('organs')
+      .only(['opus'])
+      .sortBy('opus', 'desc')
+      .fetch()
     var path = route.path
     var slug = path.split('/')[2]
     var organ = await $content('organs', slug).fetch()
+    organ.prev = organ.opus - 1
+    organ.next = organ.opus + 1
+    if (organ.opus == 1) organ.prev = ''
+    if (organ.opus == organs[0].opus) organ.next = ''
     return {
       organ
     }

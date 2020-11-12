@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 90%;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align:right; width: 100%; cursor: hand; text-decoration:underline; " onclick="window.close()">Close</div>
+  <img id="hires" / onclick="window.close()">
+</body>
+<script>
+  document.getElementById('hires').src=location.search.split('?')[1]
+  document.onkeydown = function(evt) {
+      evt = evt || window.event;
+      if (evt.keyCode == 27) {
+          window.close()
+      }
+  }
+</script>
+</html>

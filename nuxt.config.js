@@ -10,7 +10,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    ],  
+    ],
   },
   target: 'static',
   ssr: true,
@@ -19,7 +19,11 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: '~/plugins/vue-carousel', mode: 'client', ssr: false },],
+  plugins: [
+      { src: '~/plugins/vue-carousel', mode: 'client', ssr: false },
+  ],
+
+
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

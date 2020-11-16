@@ -17,27 +17,6 @@
       <nuxt-content :document="organ" />
     </p>
     <div id="prevnextContainer">
-      <!--
-      <div v-if="organ.prev > ''">
-        <span v-if="stoplist == true">
-          Previous: <a :href="'/opus/' + organ.prev + '-stoplist'">Opus {{organ.prev}}</a>
-        </span>
-        <span v-else>
-          Previous: <a :href="'/opus/' + organ.prev + '-specs'">Opus {{organ.prev}}</a>
-        </span>
-      </div>
-
-      <div v-if="organ.next > ''">
-        <span v-if="stoplist == true">
-          Next: <a :href="'/opus/' + organ.next + '-stoplist'">Opus {{organ.next}}</a>
-        </span>
-        <span v-else>
-          Next: <a :href="'/opus/' + organ.next + '-specs'">Opus {{organ.next}}</a>
-        </span>
-      </div>
--->
-
-
       <ul class="menu">
         <span v-if="organ.prev >''">
           <li v-if="stoplist == true">
@@ -49,9 +28,6 @@
               < Opus&nbsp;{{organ.prev}}</a>
           </li>
         </span>
-
-
-
         <span v-if="organ.next > ''">
           <li v-if="stoplist == true">
             <a :href="'/opus/' + organ.next + '-stoplist'">Opus {{organ.next}}&nbsp;></a>
@@ -61,10 +37,6 @@
           </li>
         </span>
       </ul>
-
-
-
-
     </div>
   </div>
   <div style=" text-align: center;">

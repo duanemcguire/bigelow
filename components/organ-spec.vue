@@ -16,7 +16,8 @@
     <p style="padding-top 40px;">
       <nuxt-content :document="organ" />
     </p>
-    <div>
+    <div id="prevnextContainer">
+      <!--
       <div v-if="organ.prev > ''">
         <span v-if="stoplist == true">
           Previous: <a :href="'/opus/' + organ.prev + '-stoplist'">Opus {{organ.prev}}</a>
@@ -34,6 +35,36 @@
           Next: <a :href="'/opus/' + organ.next + '-specs'">Opus {{organ.next}}</a>
         </span>
       </div>
+-->
+
+
+      <ul class="menu">
+        <span v-if="organ.prev >''">
+          <li v-if="stoplist == true">
+            <a :href="'/opus/' + organ.prev + '-stoplist'">
+              < Opus&nbsp;{{organ.prev}}</a>
+          </li>
+          <li v-else>
+            <a :href="'/opus/' + organ.prev + '-specs'">
+              < Opus&nbsp;{{organ.prev}}</a>
+          </li>
+        </span>
+
+
+
+        <span v-if="organ.next > ''">
+          <li v-if="stoplist == true">
+            <a :href="'/opus/' + organ.next + '-stoplist'">Opus {{organ.next}}&nbsp;></a>
+          </li>
+          <li v-else>
+            <a :href="'/opus/' + organ.next + '-specs'">Opus {{organ.next}}&nbsp;></a>
+          </li>
+        </span>
+      </ul>
+
+
+
+
     </div>
   </div>
   <div style=" text-align: center;">
@@ -68,7 +99,35 @@ export default {
   },
 }
 </script>
-<style >
+<style  scoped>
+#prevnextContainer ul {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+#prevnextContainer ul li {
+  display: inline;
+}
+
+#prevnextContainer ul li a {
+  font-weight: normal;
+  text-decoration: none;
+  padding: .1em .5em;
+  color: #fff;
+  background-color: #5b5650;
+}
+
+#prevnextContainer ul li a:hover {
+  color: #111;
+  background-color: #ffcc66;
+}
+
+
 .organspec a {
   font-weight: bold;
 }

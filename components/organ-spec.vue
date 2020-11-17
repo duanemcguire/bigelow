@@ -16,6 +16,8 @@
     <p style="padding-top 40px;">
       <nuxt-content :document="organ" />
     </p>
+  </div>
+  <div style=" text-align: center;">
     <div id="prevnextContainer">
       <ul class="menu">
         <span v-if="organ.prev >''">
@@ -38,8 +40,7 @@
         </span>
       </ul>
     </div>
-  </div>
-  <div style=" text-align: center;">
+
     <span v-if="onlyonephoto"></span>
     <span v-else-if="!stoplist">Swipe to scroll through photos</span>
     <slot></slot>
@@ -71,7 +72,13 @@ export default {
   },
 }
 </script>
-<style  scoped>
+<style  >
+#prevnextContainer {
+  position: relative;
+  top: 30px;
+  left: 59px;
+}
+
 #prevnextContainer ul {
   margin-left: 0;
   margin-right: 0;
@@ -136,12 +143,25 @@ img {
 @media screen and (max-width: 1000px) {
   img {
     max-width: 450px;
+
   }
+
+  #prevnextContainer {
+    position: relative;
+    top: 30px;
+    left: 0px;
+  }
+
 }
 
 @media screen and (max-width: 800px) {
   img {
     max-width: 200px;
+  }
+
+  #prevnextContainer {
+    position: relative;
+    top: 0px;
   }
 }
 </style>

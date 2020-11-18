@@ -76,7 +76,7 @@ export default {
 #prevnextContainer {
   position: relative;
   top: 30px;
-  left: 59px;
+  left: 50px;
 }
 
 #prevnextContainer ul {
@@ -123,7 +123,7 @@ export default {
   position: relative;
   font-family: Arial;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   min-height: 100px;
 }
 

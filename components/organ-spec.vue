@@ -41,7 +41,7 @@
       </ul>
     </div>
 
-    <span v-if="onlyonephoto"></span>
+    <span v-if="onlyonephoto"> &nbsp; </span>
     <span v-else-if="!stoplist">Swipe to scroll through photos</span>
     <slot></slot>
 

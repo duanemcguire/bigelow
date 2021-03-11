@@ -1,7 +1,7 @@
 <template>
 <organ-spec :organ="organ" :stoplist=true>
+  <BR />
   <div>
-    <a :href="'/pdf/' + organ.opus + '-stop-list.pdf'">Download Stop List PDF</a>
     <embed :src="'/pdf/' + organ.opus + '-stop-list.pdf'" width="718" height="980" type='application/pdf'>
   </div>
 </organ-spec>

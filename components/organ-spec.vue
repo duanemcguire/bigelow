@@ -39,10 +39,17 @@
           </li>
         </span>
       </ul>
+      <span> <a v-if="stoplist" :href="'/pdf/' + organ.opus + '-stop-list.pdf'">Download Stop List PDF</a></span>
+
     </div>
+    <BR />
 
     <span v-if="onlyonephoto"> &nbsp; </span>
     <span v-else-if="!stoplist">Swipe to scroll through photos</span>
+
+
+
+
     <slot></slot>
 
 
